@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Задает кодировку для HTML-документа (рекомендуется использовать кодировку UTF-8 - кодировка для Unicode)-->
+        <meta charset="UTF-8" />
+        <!--Мета тег "X-UA-Compatible" Управляет режимом отображением страниц в браузерах IE8+-->
+        <!--"IE=edge" всегда использует последний доступный стандартный режим отображения независимо от <!DOCTYPE>-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--Viewport - это видимая пользователю область веб-страницы, то, что может увидеть пользователь, не прибегая к прокрутке-->
+        <!--Meta-тег "viewport" сообщает браузеру о том, как именно обрабатывать размеры страницы, и изменять её масштаб-->
+        <!--константа "device-width", которая задаёт ширину страницы в соответствии с размером экрана (с адаптивным дизайном width=device-width)-->
+        <!--"initial-scale" – начальный масштаб страницы (Значение 1.0 определяет масштаб 1:1, т.е. «не масштабировать»)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Подключение файла style.css-->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="css/style.min.css" />
+        <!--Подключение библиотеки JavaScript-->
+        <!--Название сайта-->
+        <title>SQR3</title>
+    </head>
+    <!--Всё, что отобразиться на сайте-->
+    <body>
+        <header class="header">
+                <div class="header__container">
+                    <div class="header__inner">
+                        <a class="header__logo" href="#">SQ R3</a>
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">Home</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">About</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">Service</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">Furniture</a>
+                                </li>
+                                <li class="nav__item">
+                                    <button class="btn header__btn">Order Now</button>
+                                </li>
+                            </ul>
+                        </nav>
+                        <form class="form" action="#">
+                            <input class="form__text" type="text" placeholder="Search a furniture">
+                            <button class="form__search" href="#">
+                            </button>
+                        </form>
+                        <div class="burger">
+                            <span class="burger__line"></span>
+                            <span class="burger__line"></span>
+                            <span class="burger__line"></span>
+                        </div>
+                    </div>
+                </div>
+        </header>

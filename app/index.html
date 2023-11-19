@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Задает кодировку для HTML-документа (рекомендуется использовать кодировку UTF-8 - кодировка для Unicode)-->
+        <meta charset="UTF-8" />
+        <!--Мета тег "X-UA-Compatible" Управляет режимом отображением страниц в браузерах IE8+-->
+        <!--"IE=edge" всегда использует последний доступный стандартный режим отображения независимо от <!DOCTYPE>-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--Viewport - это видимая пользователю область веб-страницы, то, что может увидеть пользователь, не прибегая к прокрутке-->
+        <!--Meta-тег "viewport" сообщает браузеру о том, как именно обрабатывать размеры страницы, и изменять её масштаб-->
+        <!--константа "device-width", которая задаёт ширину страницы в соответствии с размером экрана (с адаптивным дизайном width=device-width)-->
+        <!--"initial-scale" – начальный масштаб страницы (Значение 1.0 определяет масштаб 1:1, т.е. «не масштабировать»)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Подключение файла style.css-->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="css/style.min.css" />
+        <!--Подключение библиотеки JavaScript-->
+        <!--Название сайта-->
+        <title>SQR3</title>
+    </head>
+    <!--Всё, что отобразиться на сайте-->
+    <body>
+        <header class="header">
+                <div class="header__container">
+                    <div class="header__inner">
+                        <a class="header__logo" href="#">SQ R3</a>
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">Home</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">About</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">Service</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">Furniture</a>
+                                </li>
+                                <li class="nav__item">
+                                    <button class="btn header__btn">Order Now</button>
+                                </li>
+                            </ul>
+                        </nav>
+                        <form class="form" action="#">
+                            <input class="form__text" type="text" placeholder="Search a furniture">
+                            <button class="form__search" href="#">
+                            </button>
+                        </form>
+                        <div class="burger">
+                            <span class="burger__line"></span>
+                            <span class="burger__line"></span>
+                            <span class="burger__line"></span>
+                        </div>
+                    </div>
+                </div>
+        </header>
+
+<div class="main">
+
+    <section class="top">
+
+        <div class="top__container">
+
+            <div class="top__inner">
+
+                <div class="top__left">
+
+                    <ul class="socials">
+
+                        <li class="socials__item">
+
+                            <a class="socials__link" href="#">
+
+                            <svg class="socials__link-svg facebook" style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+
+                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" fill="white">
+
+                                </path>
+
+                            </svg>
+
+                            </a>
+
+                        </li>
+
+                        <li class="socials__item">
+
+                            <a class="socials__link" href="#">
+
+                                <svg class="socials__link-svg instagram" style="color: white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"> 
+
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" fill="white">
+
+                                    </path> 
+
+                                </svg>
+
+                            </a>
+
+                        </li>
+
+                        <li class="socials__item">
+
+                            <a class="socials__link" href="#">
+
+                                <svg class="socials__link-svg twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 26" fill="none">
+
+                                <path d="M31 1.01345C29.6942 1.91691 28.2483 2.60792 26.7182 3.05985C25.8969 2.13364 24.8055 1.47716 23.5914 1.1792C22.3774 0.88125 21.0993 0.956198 19.9301 1.39391C18.7609 1.83162 17.757 2.61098 17.0541 3.62658C16.3512 4.64218 15.9832 5.84501 16 7.07241V8.40992C13.6036 8.47087 11.229 7.94957 9.08774 6.89244C6.94647 5.83531 5.10498 4.27517 3.72727 2.35097C3.72727 2.35097 -1.72727 14.3886 10.5455 19.7387C7.73708 21.6085 4.39158 22.5461 1 22.4137C13.2727 29.1013 28.2727 22.4137 28.2727 7.03228C28.2715 6.65972 28.235 6.28808 28.1636 5.92214C29.5554 4.57592 30.5375 2.87623 31 1.01345V1.01345Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+                              </svg>
+
+                                
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="top__right">
+
+                    <h1 class="top__right-title">
+
+                        Enjoy your life in our luxurious furniture
+
+                    </h1>
+
+                    <p class="top__right-text">
+
+                        If you are looking for a furniture then you have come to
+
+                        the right place.
+
+                    </p>
+
+                    <button class="btn header__btn">Order Now</button>
+
+                </div>
+
+            </div>
+
+            <nav class="top__nav">
+
+                <ul class="top__nav-list">
+
+                    <li class="top__nav-item">
+
+                        <h3 class="top__nav-title">120 k</h3>
+
+                        <div class="top__nav-content">Furniture Sale</div>
+
+                    </li>
+
+                    <li class="top__nav-item">
+
+                        <h3 class="top__nav-title">98 k</h3>
+
+                        <div class="top__nav-content d-flex">
+
+                            <p class="top__nav-content-text">Review</p>
+
+                            <img
+
+                                class="top__nav-content-img"
+
+                                src="../images/star.svg"
+
+                                alt="star"
+
+                            />
+
+                            <p class="top__nav-content-text">(4.5)</p>
+
+                        </div>
+
+                    </li>
+
+                    <li class="top__nav-item">
+
+                        <h3 class="top__nav-title">125</h3>
+
+                        <div class="top__nav-content">Furniture Categories</div>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </section>
+
+    <!-- <section class="about">
+
+        <div class="about__container">
+
+            <h2 class="title">Learn about us</h2>
+
+            <p class="subtitle">It’s short title here</p>
+
+            <div class="about__inner">
+
+                <img class="about__img" src="../images/about-image.jpg" alt="about-image" >
+
+                <div class="about__content">
+
+                    <p class="about__text">
+
+                        Lorem Ipsum has been the industry's standard dummy text ever to since the 1500s, type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting. type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+
+                    </p>
+
+                    <button class="btn about__btn">More about us</button>
+
+                    <ul class="about__list">
+
+                        <li class="about__item">
+
+                            <img class="about__item-img" src="../images/amazon.png" alt="amazon">
+
+                        </li>
+
+                        <li class="about__item">
+
+                            <img class="about__item-img" src="../images/alibaba.png" alt="alibaba">
+
+                        </li>
+
+                        <li class="about__item">
+
+                            <img class="about__item-img" src="../images/circles.svg" alt="circles">
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="service">
+
+        <div class="service__container">
+
+            <h2 class="title">We provide that service</h2>
+
+            <p class="subtitle">
+
+                It is a long established fact that a reader will be distracted by the service.
+
+            </p>
+
+            <ul class="service__list">
+
+                <li class="service__item">
+
+                    <img class="service__item-img" src="../images/service1.svg" alt="service">
+
+                    <h4 class="service__item-title">Free Delevary</h4>
+
+                    <p class="service__item-text">
+
+                        It is a long established fact that a reader will be the service.
+
+                    </p>
+
+                </li>
+
+                <li class="service__item">
+
+                    <img class="service__item-img" src="../images/service2.svg" alt="service">
+
+                    <h4 class="service__item-title">100% Guarnatee</h4>
+
+                    <p class="service__item-text">
+
+                        It is a long established fact that a reader will be the service.
+
+                    </p>
+
+                </li>
+
+                <li class="service__item">
+
+                    <img class="service__item-img" src="../images/service3.svg" alt="service">
+
+                    <h4 class="service__item-title">Best Quality</h4>
+
+                    <p class="service__item-text">
+
+                        It is a long established fact that a reader will be the service.
+
+                    </p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section class="furniture">
+
+        <div class="furniture__container">
+
+            <h2 class="title furniture__title">Our Furniture</h2>
+
+            <p class="subtitle furniture__subtitle">
+
+                It is a long established fact that a reader will be distracted by the service.
+
+            </p>
+
+            <div class="furniture__inner">
+
+                <div class="furniture__top">
+
+                    <div class="furniture__search">
+
+                        <form name="search" class="form-search" action="#">
+
+                            <input class="form-search__input" type="text" placeholder="Search a furniture">
+
+                            <button class="btn form-search__btn" type="submit">
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                    <ul class="furniture__top-list">
+
+                        <li class="furniture__top-item active">
+
+                            <button class="furniture__top-link" data-name="all">
+
+                                All
+
+                            </button>
+
+                        </li>
+
+                        <li class="furniture__top-item">
+
+                            <button class="furniture__top-link">
+
+                                Chair
+
+                            </button>
+
+                        </li>
+
+                        <li class="furniture__top-item">
+
+                            <button class="furniture__top-link">
+
+                                Table
+
+                            </button>
+
+                        </li>
+
+                        <li class="furniture__top-item">
+
+                            <button class="furniture__top-link" data-name="bed">
+
+                                Bed
+
+                            </button>
+
+                        </li>
+
+                        <li class="furniture__top-item">
+
+                            <button class="furniture__top-link" data-name="sofa">
+
+                                Sofa
+
+                            </button>
+
+                        </li>
+
+                        <li class="furniture__top-item">
+
+                            <button class="furniture__top-link" data-name="wardrobe">
+
+                                Wardrobe
+
+                            </button>
+
+                        </li>
+
+                        <li class="furniture__top-item">
+
+                            <button class="furniture__top-link">
+
+                                Almirah
+
+                            </button>
+
+                        </li>
+
+                        <li class="furniture__top-item">
+
+                            <button class="furniture__top-link">
+
+                                Dimple
+
+                            </button>
+
+                        </li>
+
+                        <li class="furniture__top-item">
+
+                            <button class="furniture__top-link">
+
+                                Rack
+
+                            </button>
+
+                        </li>
+
+                        <li class="furniture__top-item">
+
+                            <button class="furniture__top-link">
+
+                                Stand
+
+                            </button>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="furniture__list">
+
+                    <li class="furniture__item" data-item="sofa">
+
+                        <img class="furniture__item-img" src="../images/image1.png" alt="image1">
+
+                        <div class="furniture__item-content">
+
+                            <h4 class="furniture__item-name">
+
+                                Furniture Name
+
+                            </h4>
+
+                            <p class="furniture__item-price">$ 250</p>
+
+                        </div>
+
+                        <p class="furniture__item-text">
+
+                            It is a long estiabs lished fact that a reader will be the service.
+
+                        </p>
+
+                        <button class="btn furniture__item-btn">
+
+                            Order Now
+
+                        </button>
+
+                    </li>
+
+                    <li class="furniture__item" data-item="bed">
+
+                        <img class="furniture__item-img" src="../images/image2.png" alt="image1">
+
+                        <div class="furniture__item-content">
+
+                            <h4 class="furniture__item-name">
+
+                                Furniture Name
+
+                            </h4>
+
+                            <p class="furniture__item-price">$ 250</p>
+
+                        </div>
+
+                        <p class="furniture__item-text">
+
+                            It is a long estiabs lished fact that a reader will be the service.
+
+                        </p>
+
+                        <button class="btn furniture__item-btn">
+
+                            Order Now
+
+                        </button>
+
+                    </li>
+
+                    <li class="furniture__item" data-item="wardrobe">
+
+                        <img class="furniture__item-img" src="../images/image3.png" alt="image1">
+
+                        <div class="furniture__item-content">
+
+                            <h4 class="furniture__item-name">
+
+                                Furniture Name
+
+                            </h4>
+
+                            <p class="furniture__item-price">$ 250</p>
+
+                        </div>
+
+                        <p class="furniture__item-text">
+
+                            It is a long estiabs lished fact that a reader will be the service.
+
+                        </p>
+
+                        <button class="btn furniture__item-btn">
+
+                            Order Now
+
+                        </button>
+
+                    </li>
+
+                    <li class="furniture__item" data-item="sofa">
+
+                        <img class="furniture__item-img" src="../images/image4.png" alt="image1">
+
+                        <div class="furniture__item-content">
+
+                            <h4 class="furniture__item-name">
+
+                                Furniture Name
+
+                            </h4>
+
+                            <p class="furniture__item-price">$ 250</p>
+
+                        </div>
+
+                        <p class="furniture__item-text">
+
+                            It is a long estiabs lished fact that a reader will be the service.
+
+                        </p>
+
+                        <button class="btn furniture__item-btn">
+
+                            Order Now
+
+                        </button>
+
+                    </li>
+
+                    <li class="furniture__item" data-item="sofa">
+
+                        <img class="furniture__item-img" src="../images/image5.png" alt="image1">
+
+                        <div class="furniture__item-content">
+
+                            <h4 class="furniture__item-name">
+
+                                Furniture Name
+
+                            </h4>
+
+                            <p class="furniture__item-price">$ 250</p>
+
+                        </div>
+
+                        <p class="furniture__item-text">
+
+                            It is a long estiabs lished fact that a reader will be the service.
+
+                        </p>
+
+                        <button class="btn furniture__item-btn">
+
+                            Order Now
+
+                        </button>
+
+                    </li>
+
+                    <li class="furniture__item" data-item="sofa">
+
+                        <img class="furniture__item-img" src="../images/image6.png" alt="image1">
+
+                        <div class="furniture__item-content">
+
+                            <h4 class="furniture__item-name">
+
+                                Furniture Name
+
+                            </h4>
+
+                            <p class="furniture__item-price">$ 250</p>
+
+                        </div>
+
+                        <p class="furniture__item-text">
+
+                            It is a long estiabs lished fact that a reader will be the service.
+
+                        </p>
+
+                        <button class="btn furniture__item-btn">
+
+                            Order Now
+
+                        </button>
+
+                    </li>
+
+                    <li class="furniture__item" data-item="sofa">
+
+                        <img class="furniture__item-img" src="../images/image7.png" alt="image1">
+
+                        <div class="furniture__item-content">
+
+                            <h4 class="furniture__item-name">
+
+                                Furniture Name
+
+                            </h4>
+
+                            <p class="furniture__item-price">$ 250</p>
+
+                        </div>
+
+                        <p class="furniture__item-text">
+
+                            It is a long estiabs lished fact that a reader will be the service.
+
+                        </p>
+
+                        <button class="btn furniture__item-btn">
+
+                            Order Now
+
+                        </button>
+
+                    </li>
+
+                    <li class="furniture__item" data-item="bed">
+
+                        <img class="furniture__item-img" src="../images/image8.png" alt="image1">
+
+                        <div class="furniture__item-content">
+
+                            <h4 class="furniture__item-name">
+
+                                Furniture Name
+
+                            </h4>
+
+                            <p class="furniture__item-price">$ 250</p>
+
+                        </div>
+
+                        <p class="furniture__item-text">
+
+                            It is a long estiabs lished fact that a reader will be the service.
+
+                        </p>
+
+                        <button class="btn furniture__item-btn">
+
+                            Order Now
+
+                        </button>
+
+                    </li>
+
+                </ul>
+
+                <div class="furniture__btn-inner">
+
+                    <button class="btn furniture__btn">
+
+                        View All
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="reviews">
+
+        <div class="reviews__container">
+
+            <h2 class="title">
+
+                What say clients about us
+
+            </h2>
+
+            <p class="subtitle">
+
+                It is a long established fact that a reader will be distracted by the service.
+
+            </p>
+
+            <div class="reviews__content swiper">
+
+                <ul class="reviews__list swiper-wrapper">
+
+                    <li class="reviews__user swiper-slide">
+
+                        <img class="reviews__user-img" src="../images/user1.png" alt="user">
+
+                        <div class="reviews__user-content">
+
+                            <h5 class="reviews__user-name">
+
+                                Mr. Jone Ambrose
+
+                            </h5>
+
+                            <time class="reviews__user-data" datetime="2021-07-20">20 - 07 - 21</time>
+
+                            <p class="reviews__user-text">
+
+                                <span>“</span>Lorem Ipsum has been the industry by standard dummy text ever to since the 1500s, it’s  type and scrambled it to make a type specimen book. It’s has survived not only five.<span>“</span>
+
+                            </p>
+
+                            <div class="reviews__star">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="140" height="20" viewBox="0 0 140 20" fill="none">
+
+                                    <path d="M10 0L13.09 6.26L20 7.27L15 12.14L16.18 19.02L10 15.77L3.82 19.02L5 12.14L0 7.27L6.91 6.26L10 0Z" fill="#F6DE00"/>
+
+                                    <path d="M40 0L43.09 6.26L50 7.27L45 12.14L46.18 19.02L40 15.77L33.82 19.02L35 12.14L30 7.27L36.91 6.26L40 0Z" fill="#F6DE00"/>
+
+                                    <path d="M70 0L73.09 6.26L80 7.27L75 12.14L76.18 19.02L70 15.77L63.82 19.02L65 12.14L60 7.27L66.91 6.26L70 0Z" fill="#F6DE00"/>
+
+                                    <path d="M100 0L103.09 6.26L110 7.27L105 12.14L106.18 19.02L100 15.77L93.82 19.02L95 12.14L90 7.27L96.91 6.26L100 0Z" fill="#F6DE00"/>
+
+                                    <path d="M130 0L133.09 6.26L140 7.27L135 12.14L136.18 19.02L130 15.77L123.82 19.02L125 12.14L120 7.27L126.91 6.26L130 0Z" fill="#F6DE00"/>
+
+                                    </svg>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="reviews__user swiper-slide">
+
+                        <img class="reviews__user-img" src="../images/user2.png" alt="user">
+
+                        <div class="reviews__user-content">
+
+                            <h5 class="reviews__user-name">
+
+                                Mr. Jone Ambrose
+
+                            </h5>
+
+                            <time class="reviews__user-data" datetime="2021-07-20">20 - 07 - 21</time>
+
+                            <p class="reviews__user-text">
+
+                                <span>“</span>Lorem Ipsum has been the industry by standard dummy text ever to since the 1500s, it’s  type and scrambled it to make a type specimen book. It’s has survived not only five.<span>“</span>
+
+                            </p>
+
+                            <div class="reviews__star">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="140" height="20" viewBox="0 0 140 20" fill="none">
+
+                                    <path d="M10 0L13.09 6.26L20 7.27L15 12.14L16.18 19.02L10 15.77L3.82 19.02L5 12.14L0 7.27L6.91 6.26L10 0Z" fill="#F6DE00"/>
+
+                                    <path d="M40 0L43.09 6.26L50 7.27L45 12.14L46.18 19.02L40 15.77L33.82 19.02L35 12.14L30 7.27L36.91 6.26L40 0Z" fill="#F6DE00"/>
+
+                                    <path d="M70 0L73.09 6.26L80 7.27L75 12.14L76.18 19.02L70 15.77L63.82 19.02L65 12.14L60 7.27L66.91 6.26L70 0Z" fill="#F6DE00"/>
+
+                                    <path d="M100 0L103.09 6.26L110 7.27L105 12.14L106.18 19.02L100 15.77L93.82 19.02L95 12.14L90 7.27L96.91 6.26L100 0Z" fill="#F6DE00"/>
+
+                                    <path d="M130 0L133.09 6.26L140 7.27L135 12.14L136.18 19.02L130 15.77L123.82 19.02L125 12.14L120 7.27L126.91 6.26L130 0Z" fill="#F6DE00"/>
+
+                                    </svg>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="reviews__user swiper-slide">
+
+                        <img class="reviews__user-img" src="../images/user2.png" alt="user">
+
+                        <div class="reviews__user-content">
+
+                            <h5 class="reviews__user-name">
+
+                                Mr. Jone Ambrose
+
+                            </h5>
+
+                            <time class="reviews__user-data" datetime="2021-07-20">20 - 07 - 21</time>
+
+                            <p class="reviews__user-text">
+
+                                <span>“</span>Lorem Ipsum has been the industry by standard dummy text ever to since the 1500s, it’s  type and scrambled it to make a type specimen book. It’s has survived not only five.<span>“</span>
+
+                            </p>
+
+                            <div class="reviews__star">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="140" height="20" viewBox="0 0 140 20" fill="none">
+
+                                    <path d="M10 0L13.09 6.26L20 7.27L15 12.14L16.18 19.02L10 15.77L3.82 19.02L5 12.14L0 7.27L6.91 6.26L10 0Z" fill="#F6DE00"/>
+
+                                    <path d="M40 0L43.09 6.26L50 7.27L45 12.14L46.18 19.02L40 15.77L33.82 19.02L35 12.14L30 7.27L36.91 6.26L40 0Z" fill="#F6DE00"/>
+
+                                    <path d="M70 0L73.09 6.26L80 7.27L75 12.14L76.18 19.02L70 15.77L63.82 19.02L65 12.14L60 7.27L66.91 6.26L70 0Z" fill="#F6DE00"/>
+
+                                    <path d="M100 0L103.09 6.26L110 7.27L105 12.14L106.18 19.02L100 15.77L93.82 19.02L95 12.14L90 7.27L96.91 6.26L100 0Z" fill="#F6DE00"/>
+
+                                    <path d="M130 0L133.09 6.26L140 7.27L135 12.14L136.18 19.02L130 15.77L123.82 19.02L125 12.14L120 7.27L126.91 6.26L130 0Z" fill="#F6DE00"/>
+
+                                    </svg>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+                <div class="swiper-button-prev">
+
+                    <svg width="14" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                        <path d="M13 25L1 13 13 1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+                    </svg>
+
+                </div>
+
+                <div class="swiper-button-next">
+
+                    <svg width="14" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                        <path d="M1 25l12-12L1 1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+                    </svg>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section> -->
+
+</div>
+
+
+
+        <footer class="footer">
+
+            <div class="footer__container">
+
+                <ul class="footer__list">
+
+                    <li class="footer__item">
+
+                        <a class="footer__logo" href="#">SQ R3</a>
+
+                        <ul class="footer__inner-list">
+
+                            <li class="footer__inner-telephone">
+
+                                <svg class="footer__inner_svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+
+                                    <rect width="32" height="32" rx="16" fill="white"/>
+
+                                    <path d="M21.2647 16.6999C21.1102 16.6999 20.9486 16.6507 20.7941 16.6156C20.4811 16.5466 20.1735 16.455 19.8738 16.3416C19.5478 16.223 19.1896 16.2292 18.868 16.3589C18.5463 16.4886 18.284 16.7326 18.1315 17.0441L17.9769 17.3602C17.2927 16.9796 16.6639 16.5068 16.1082 15.9552C15.5566 15.3995 15.0838 14.7707 14.7032 14.0865L14.9983 13.8898C15.3097 13.7373 15.5538 13.475 15.6835 13.1533C15.8132 12.8317 15.8193 12.4734 15.7008 12.1475C15.5892 11.8471 15.4977 11.5397 15.4268 11.2272C15.3917 11.0727 15.3636 10.9111 15.3425 10.7495C15.2572 10.2547 14.998 9.80654 14.6116 9.48583C14.2252 9.16513 13.737 8.99292 13.2349 9.00022H11.1274C10.8246 8.99738 10.5248 9.05981 10.2483 9.18325C9.97182 9.3067 9.7252 9.48826 9.5252 9.71559C9.32521 9.94291 9.17655 10.2107 9.08933 10.5006C9.00211 10.7906 8.9784 11.0959 9.01979 11.3958C9.39405 14.339 10.7382 17.0735 12.8399 19.1676C14.9415 21.2616 17.681 22.5958 20.6255 22.9593H20.8924C21.4105 22.9601 21.9106 22.77 22.2975 22.4254C22.5197 22.2266 22.6972 21.983 22.8184 21.7105C22.9395 21.438 23.0014 21.1429 23 20.8447V18.7372C22.9914 18.2492 22.8137 17.7793 22.4972 17.4078C22.1807 17.0362 21.7451 16.786 21.2647 16.6999ZM21.616 20.915C21.6159 21.0147 21.5945 21.1133 21.5533 21.2042C21.5121 21.295 21.4521 21.3761 21.3772 21.4419C21.2989 21.51 21.2071 21.5609 21.1079 21.5912C21.0086 21.6214 20.9041 21.6304 20.8011 21.6175C18.1701 21.2802 15.7262 20.0765 13.855 18.1964C11.9839 16.3164 10.7918 13.8668 10.467 11.2342C10.4558 11.1313 10.4656 11.0272 10.4958 10.9282C10.526 10.8292 10.5759 10.7373 10.6426 10.6582C10.7084 10.5832 10.7895 10.5232 10.8803 10.482C10.9712 10.4408 11.0698 10.4194 11.1695 10.4193H13.2771C13.4404 10.4157 13.6 10.4691 13.7282 10.5704C13.8564 10.6717 13.9453 10.8145 13.9796 10.9743C14.0077 11.1663 14.0428 11.356 14.085 11.5434C14.1661 11.9137 14.2741 12.2776 14.4081 12.6323L13.4246 13.0889C13.3405 13.1275 13.2649 13.1823 13.202 13.2502C13.1392 13.3181 13.0903 13.3977 13.0584 13.4846C13.0264 13.5714 13.0118 13.6637 13.0156 13.7561C13.0194 13.8485 13.0414 13.9393 13.0804 14.0233C14.0914 16.189 15.8323 17.9298 17.998 18.9409C18.1691 19.0112 18.3609 19.0112 18.5319 18.9409C18.6195 18.9096 18.7001 18.8611 18.7688 18.7984C18.8375 18.7357 18.8931 18.66 18.9324 18.5756L19.3679 17.5921C19.7311 17.7219 20.1018 17.8299 20.4779 17.9152C20.6653 17.9574 20.8549 17.9925 21.047 18.0206C21.2067 18.0549 21.3496 18.1438 21.4509 18.272C21.5522 18.4002 21.6056 18.5598 21.602 18.7231L21.616 20.915Z" fill="#373737"/>
+
+                                </svg>
+
+                                <a class="footer__telephone" href="tel:+8801760007083">+8801760-007083</a>
+
+                            </li>
+
+                            <li class="footer__inner-mail">
+
+                                <svg class="footer__inner_svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+
+                                    <rect width="32" height="32" rx="16" fill="white"/>
+
+                                    <path d="M20.9 10H11.1C10.543 10 10.0089 10.2212 9.61508 10.6151C9.22125 11.0089 9 11.543 9 12.1V19.1C9 19.657 9.22125 20.1911 9.61508 20.5849C10.0089 20.9788 10.543 21.2 11.1 21.2H20.9C21.457 21.2 21.9911 20.9788 22.3849 20.5849C22.7788 20.1911 23 19.657 23 19.1V12.1C23 11.543 22.7788 11.0089 22.3849 10.6151C21.9911 10.2212 21.457 10 20.9 10ZM11.1 11.4H20.9C21.0857 11.4 21.2637 11.4737 21.395 11.605C21.5263 11.7363 21.6 11.9143 21.6 12.1L16 15.516L10.4 12.1C10.4 11.9143 10.4737 11.7363 10.605 11.605C10.7363 11.4737 10.9143 11.4 11.1 11.4ZM21.6 19.1C21.6 19.2857 21.5263 19.4637 21.395 19.595C21.2637 19.7263 21.0857 19.8 20.9 19.8H11.1C10.9143 19.8 10.7363 19.7263 10.605 19.595C10.4737 19.4637 10.4 19.2857 10.4 19.1V13.696L15.636 16.895C15.7424 16.9564 15.8631 16.9888 15.986 16.9888C16.1089 16.9888 16.2296 16.9564 16.336 16.895L21.6 13.696V19.1Z" fill="#373737"/>
+
+                                </svg>
+
+                                <a class="footer__mail" href="mailto:uiuxmdomith@gmail.com">uiuxmdomith@gmail.com</a>
+
+                            </li>
+
+                            <li class="footer__inner-socials">
+
+                                <a class="footer__inner-link" href="#">     
+
+                                    <svg class="footer__inner-link_svg facebook" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 11 20" fill="none">
+
+                                        <path d="M11 0H8C6.67392 0 5.40215 0.526784 4.46447 1.46447C3.52678 2.40215 3 3.67392 3 5V8H0V12H3V20H7V12H10L11 8H7V5C7 4.73478 7.10536 4.48043 7.29289 4.29289C7.48043 4.10536 7.73478 4 8 4H11V0Z" fill="white"/>
+
+                                    </svg>
+
+                                </a>
+
+                                <a class="footer__inner-link" href="#">
+
+                                    <svg class="footer__inner-link_svg instagram" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 22" fill="none">
+
+                                        <path d="M16 1H6C3.23858 1 1 3.23858 1 6V16C1 18.7614 3.23858 21 6 21H16C18.7614 21 21 18.7614 21 16V6C21 3.23858 18.7614 1 16 1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+                                        <path d="M15 10.3703C15.1234 11.2025 14.9812 12.0525 14.5937 12.7993C14.2062 13.5461 13.5931 14.1517 12.8416 14.53C12.0901 14.9082 11.2384 15.0399 10.4077 14.9062C9.57708 14.7726 8.80971 14.3804 8.21479 13.7855C7.61987 13.1905 7.22768 12.4232 7.09402 11.5925C6.96035 10.7619 7.09202 9.9102 7.47028 9.15868C7.84854 8.40716 8.45414 7.79404 9.20094 7.40654C9.94773 7.01904 10.7977 6.87689 11.63 7.0003C12.4789 7.12619 13.2648 7.52176 13.8716 8.12861C14.4785 8.73545 14.8741 9.52138 15 10.3703Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+                                        <path d="M16.5 5.5H16.51" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+                                    </svg>
+
+                                </a>
+
+                                <a class="footer__inner-link" href="#">
+
+                                    <svg class="footer__inner-link_svg twitter" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 20" fill="none">
+
+                                        <path d="M23 1.01006C22.0424 1.68553 20.9821 2.20217 19.86 2.54006C19.2577 1.84757 18.4573 1.35675 17.567 1.13398C16.6767 0.911216 15.7395 0.967251 14.8821 1.29451C14.0247 1.62177 13.2884 2.20446 12.773 2.96377C12.2575 3.72309 11.9877 4.62239 12 5.54006V6.54006C10.2426 6.58562 8.50127 6.19587 6.93101 5.4055C5.36074 4.61513 4.01032 3.44869 3 2.01006C3 2.01006 -1 11.0101 8 15.0101C5.94053 16.408 3.48716 17.109 1 17.0101C10 22.0101 21 17.0101 21 5.51006C20.9991 5.23151 20.9723 4.95365 20.92 4.68006C21.9406 3.67355 22.6608 2.40277 23 1.01006V1.01006Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+                                    </svg>
+
+                                </a>
+
+                                <a class="footer__inner-link" href="#">
+
+                                    <svg class="footer__inner-link_svg linkedin" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 21" fill="none">
+
+                                        <path d="M15 7C16.5913 7 18.1174 7.63214 19.2426 8.75736C20.3679 9.88258 21 11.4087 21 13V20H17V13C17 12.4696 16.7893 11.9609 16.4142 11.5858C16.0391 11.2107 15.5304 11 15 11C14.4696 11 13.9609 11.2107 13.5858 11.5858C13.2107 11.9609 13 12.4696 13 13V20H9V13C9 11.4087 9.63214 9.88258 10.7574 8.75736C11.8826 7.63214 13.4087 7 15 7V7Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+                                        <path d="M5 8H1V20H5V8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+                                        <path d="M3 5C4.10457 5 5 4.10457 5 3C5 1.89543 4.10457 1 3 1C1.89543 1 1 1.89543 1 3C1 4.10457 1.89543 5 3 5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+                                    </svg>
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        <p class="footer__title">Usefull Links</p>
+
+                        <ul class="footer__inner-list d-flex">
+
+                            <li class="footer__inner-item">
+
+                                <a class="footer__inner-link" href="#">
+
+                                    Home
+
+                                </a>
+
+                            </li>
+
+                            <li class="footer__inner-item">
+
+                                <a class="footer__inner-link" href="#">
+
+                                    About Us
+
+                                </a>
+
+                            </li>
+
+                            <li class="footer__inner-item">
+
+                                <a class="footer__inner-link" href="#">
+
+                                    Service
+
+                                </a>
+
+                            </li>
+
+                            <li class="footer__inner-item">
+
+                                <a class="footer__inner-link" href="#">
+
+                                    Furniture
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        <p class="footer__title">FAQ</p>
+
+                        <ul class="footer__inner-list d-flex">
+
+                            <li class="footer__inner-item">
+
+                                <a class="footer__inner-link" href="#">
+
+                                    Lorem Ipsum Dolar
+
+                                </a>
+
+                            </li>
+
+                            <li class="footer__inner-item">
+
+                                <a class="footer__inner-link" href="#">
+
+                                    Lorem Ipsum Dolar
+
+                                </a>
+
+                            </li>
+
+                            <li class="footer__inner-item">
+
+                                <a class="footer__inner-link" href="#">
+
+                                    Lorem Ipsum Dolar
+
+                                </a>
+
+                            </li>
+
+                            <li class="footer__inner-item">
+
+                                <a class="footer__inner-link" href="#">
+
+                                    Lorem Ipsum Dolar
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        <p class="footer__title">Newsletter</p>
+
+                        <form class="footer__form" action="#" >
+
+                            <div class="footer__form-inner">
+
+                                <input class="footer__form-email" type="email"
+
+                                placeholder="Enter your mail">
+
+                                <button class="footer__form-btn" type="submit">
+
+                                    Send
+
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                        <button class="btn footer__btn">
+
+                            Download App
+
+                        </button>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </footer>
+
+        <!--Подключаем JavaScript в самом конце-->
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="js/main.min.js"></script>
+
+    </body>
+
+</html>

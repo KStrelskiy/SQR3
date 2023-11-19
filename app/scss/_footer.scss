@@ -1,0 +1,183 @@
+.footer {
+    color: #ffffff;
+    background: #373737;
+    padding: 80px 0;
+    @media (max-width: 1024px) {
+        padding: 60px 0;
+    }
+    @media (max-width: 768px) {
+        padding: 40px 0;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 15px;
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            row-gap: 25px;
+        }
+    }
+    &__logo {
+        display: inline-block;
+        font-size: 35px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        @media (max-width: 1024px) {
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+        @media (max-width: 768px) {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        @media (max-width: 1024px) {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+        @media (max-width: 768px) {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    }
+    &__inner-list {
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &__telephone,
+    &__mail {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__inner-telephone,
+    &__inner-mail {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__inner-telephone {
+        display: inline-flex;
+        margin-bottom: 11px;
+    }
+    &__inner-mail {
+        margin-bottom: 20px;
+    }
+    .footer__inner_svg rect {
+        transition: all .25s ease;
+    }
+    .footer__inner-telephone:hover .footer__inner_svg rect, 
+    .footer__inner-mail:hover .footer__inner_svg rect {
+        fill:#000000;
+    }
+    .footer__inner_svg path {
+        transition: all .25s ease;
+    }
+    .footer__inner-telephone:hover .footer__inner_svg path, 
+    .footer__inner-mail:hover .footer__inner_svg path {
+        fill:#ffffff;
+    }
+    &__inner-socials {
+        display: flex;
+        gap: 18px;
+        height: 20px;
+    }
+    &__inner-link {
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 400;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .footer__inner-link_svg {
+        transition: all 0.25s ease;
+    }
+    .footer__inner-link:hover .footer__inner-link_svg {
+        transform: scale(1.15);
+    }
+    .footer__inner-link_svg path {
+        transition: all 0.25s ease;
+    }
+    .footer__inner-link:hover .footer__inner-link_svg.facebook path {
+        fill:#3b5998 ;
+    }
+    .footer__inner-link:hover .footer__inner-link_svg.instagram path {
+        stroke:#E1306C;
+    }
+    .footer__inner-link:hover .footer__inner-link_svg.twitter path {
+        stroke:#1DA1F2;
+    }
+    .footer__inner-link:hover .footer__inner-link_svg.linkedin path {
+        stroke:#0a66c2;
+    }
+    .d-flex {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+    &__form {
+        margin-bottom: 30px;
+        @media (max-width: 768px) {
+            margin-bottom: 15px;
+        }
+    }
+    &__form-inner {
+        display: flex;
+        gap: 10px;
+        height: 40px;
+    }
+    &__form-email {
+        width: 171px;
+        height: 100%;
+        border-radius: 5px;
+        background: #FFF;
+        padding: 0px 12px;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 300;
+        &::placeholder {
+            color: #373737;  
+        }
+    }
+    &__form-btn {
+        border-radius: 5px;
+        background: #FFF;
+        color: #373737;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 0px 12px;
+        transition: all 0.25s ease;
+        &:hover {
+            background: #000000;
+            color: rgb(255, 255, 255);
+        }
+    }
+    &__btn {
+        background: #FFF;
+        color: #373737;
+        font-weight: 700;
+        padding: 9px 27px;
+    }
+}
+
+@media (max-width: 485px) {
+    .footer__item:nth-child(1) {
+        order: 4;
+    }
+    .footer__item:nth-child(2) {
+        order: 1;
+    }
+    .footer__item:nth-child(3) {
+        order: 2;
+    }
+    .footer__item:nth-child(4) {
+        order: 3;
+    }  
+}

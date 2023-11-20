@@ -24,6 +24,9 @@ $mainColor: #000000;
 
 /*<Обнуление стилей>=======================================================*/
 @import "_reset";
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: $mainColorBackground;
     color: $mainColor;
